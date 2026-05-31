@@ -1,0 +1,17 @@
+{
+  "name": "llm-app-redteam",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Promptfoo red-team suite for the Acme Store support bot (Bedrock Guardrails ON vs OFF)",
+  "scripts": {
+    "generate": "promptfoo redteam generate -o redteam.yaml",
+    "freeze": "node scripts/freeze.js",
+    "eval": "promptfoo eval -c eval.yaml --no-cache",
+    "redteam": "promptfoo redteam run",
+    "view": "promptfoo view -y",
+    "report": "promptfoo redteam report"
+  },
+  "devDependencies": {
+    "promptfoo": "^0.121.13"
+  }
+}
